@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 3px solid red;
+            /* justify-content: center; */
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        div.img1 {
+            width: 100%;
+        }
+
+        .img-container {
+            display: flex;
+
+        }
+
+        .img-container div {
+            width: 50%;
+        }
+
+        .img-container img {
+            width: 100%;
+        }
+
+        @media screen and (max-width:576px) {
+            .img-container {
+                flex-direction: column;
+            }
+
+            .img-container img {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>Lorem ipsum dolor sit amet, .</li>
+        <li>consectetur adipisicing elit.</li>
+        <li> Omnis culpa accusantium voluptate quia in architecto voluptatum eligendi </li>
+        <li>nihil, doloremque maxime beatae nobis officia </li>
+        <li>est sed ipsum illo animi ipsa assumenda.</li>
+    </ol>
+    <div class="img-container">
+        <div class="img1">
+            <img src="./images.jpeg" alt="">
+        </div>
+        <div class="img2">
+            <img src="./tiger.jpeg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

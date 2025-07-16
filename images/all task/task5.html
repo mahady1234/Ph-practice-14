@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 5</title>
+    <style>
+        .container1 {
+            padding-top: 35px;
+            background-color: white;
+            border: none;
+            height: 245px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        .container12 {
+            margin-top: 20px;
+            padding-bottom: 35px;
+            background-color: white;
+            border: none;
+            height: 240px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: blue;
+            width: 80px;
+            height: 50px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .first-image {
+            padding-top: 20px;
+            width: 350px;
+            height: 280px;
+            border-radius: 5px;
+        }
+
+        .second-image {
+            width: 350px;
+            height: 280px;
+            border-radius: 5px;
+        }
+
+        .first-part {
+            display: flex;
+            /* grid-template-columns: repeat(2, 1fr); */
+            gap: 4px;
+
+        }
+
+        .first-part2 {
+            display: flex;
+            /* grid-template-columns: repeat(2, 1fr); */
+            gap: 4px;
+
+        }
+
+        .container {
+
+            row-gap: 2px;
+            background-color: bisque;
+            height: 600px;
+            width: 900px;
+            border: 3px solid red;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width:576px) {
+            .first-part {
+                flex-direction: column;
+
+
+            }
+
+            .container {
+
+                row-gap: 2px;
+                background-color: bisque;
+                height: 1200px;
+                width: 370px;
+                border: 3px solid red;
+                padding-left: 50px;
+                padding-right: 50px;
+
+            }
+
+            .container1,
+            .container12 {
+                width: 340px;
+                padding-left: 10px;
+            }
+
+            .second-image {
+                padding-top: 5px;
+            }
+
+            .first-part2 {
+                flex-direction: column-reverse;
+            }
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first-part">
+            <img src="burger.jpeg" alt="" class="first-image">
+            <div class="container12">
+                <h3 class="title">Burger</h3>
+                <p class="description">A burger, short for hamburger, is a sandwich consisting of a cooked patty,
+                    usually beef, placed between two halves of a bun. It's a popular and versatile dish, often served
+                    with various toppings and condiments. </p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="first-part2">
+
+            <div class="container1">
+                <h3 class="title">Meet Box</h3>
+                <p class="description">A "meat box" typically refers to a curated selection of meat products, often
+                    delivered or sold in a subscription or one-time purchase. It's essentially a box containing various
+                    cuts of meat, like a custom grocery delivery for meat enthusiasts.</p>
+                <button>Buy Now</button>
+            </div>
+            <img src="meet box.jpg" alt="" class="second-image">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
